@@ -1,3 +1,9 @@
+<!-- badges -->
+[![License](https://img.shields.io/github/license/huanweide/huanweide)](LICENSE)
+[![CI](https://github.com/huanweide/huanweide/actions/workflows/ci.yml/badge.svg)](https://github.com/huanweide/huanweide/actions/workflows/ci.yml)
+[![Stars](https://img.shields.io/github/stars/huanweide/huanweide)](https://github.com/huanweide/huanweide/stargazers)
+<!-- /badges -->
+
 # 👋 Hi, I'm Huan Weide (樊斯瑞)
 
 <div align="center">
