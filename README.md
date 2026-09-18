@@ -1,7 +1,7 @@
 <!-- Huan Weide · GitHub Profile · 聚焦开源作品与技术栈，不含任何个人信息 -->
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:58A6FF,100:FF8A3D&height=190&section=header&text=Huan%20Weide&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=Open%20Source%20Builder%20%7C%20Zero-Dependency%20CLIs%20%7C%20AI%20Writing%20%26%20Learning%20Tools&descAlignY=58&animation=twinkling" alt="banner" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:58A6FF,100:FF8A3D&height=180&section=header&text=Huan%20Weide&fontSize=50&fontColor=ffffff&fontAlignY=38&desc=Open%20Source%20Builder%20%7C%20Zero-Dependency%20CLIs&descAlignY=58&animation=twinkling" alt="banner" />
 </div>
 
 <p align="center">
@@ -13,7 +13,7 @@
 </p>
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&pause=800&color=58A6FF&center=true&vCenter=true&width=560&lines=Building+useful+tools+with+minimal+cost;Zero-dependency+single-file+CLIs;AI-powered+writing+%26+learning+tools;Local-first+%26+privacy-friendly" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=19&duration=3000&pause=800&color=58A6FF&center=true&vCenter=true&width=560&lines=Building+useful+tools+with+minimal+cost;Zero-dependency+single-file+CLIs;AI-powered+writing+%26+learning+tools;Local-first+%26+privacy-friendly" alt="Typing SVG" />
 </div>
 
 ---
@@ -52,9 +52,9 @@
 | --- | --- | --- |
 | [novel-smith](https://github.com/huanweide/novel-smith) | 本地优先的中文长篇 AI 写作工坊：分层记忆抗失忆、设定自动填表、角色卡 / 世界书自动建档、去 AI 味本地过审自检，数据全在本机 SQLite，MIT 开源 | TypeScript / Next.js / SQLite |
 | [zhihuishu-helper](https://github.com/huanweide/zhihuishu-helper) | 智慧树网课助手：自动播放 + 断点续播 + AI 自动答题，纯油猴脚本，零后端 | JavaScript / Userscript |
-| [bili-subtitle-universal](https://github.com/huanweide/bili-subtitle-universal) | 全网视频字幕提取：纯油猴、零安装零后端，无字幕时自动硅基流动 SenseVoice AI 转写，支持 3 小时长视频 | JavaScript / Userscript |
+| [bili-subtitle-universal](https://github.com/huanweide/bili-subtitle-universal) | 全网视频字幕提取：纯油猴、零安装零后端，无字幕自动硅基流动 SenseVoice AI 转写，支持 3 小时长视频 | JavaScript / Userscript |
 | [forest-focus](https://github.com/huanweide/forest-focus) | 阿梓的森林：番茄钟自律 PWA，专注种树收集衣装皮肤，含打卡、目标追踪与数据仪表盘 | JavaScript / PWA |
-| [self-discipline-forest](https://github.com/huanweide/self-discipline-forest) | 专注森林：基于 Flutter 的自律养成 App | Dart / Flutter |
+| [tech-news-hub](https://github.com/huanweide/tech-news-hub) | 科技前瞻 TechPulse：每周科技资讯站，含新闻、可对话 BYOK 助手与真实优惠圈，纯静态 0 元 GitHub Pages | JavaScript |
 
 ---
 
@@ -64,12 +64,12 @@
 
 | 项目 | 简介 |
 | --- | --- |
-| [doctors](https://github.com/huanweide/doctors) / [enghealth](https://github.com/huanweide/enghealth) | 代码健康体检全家桶 monorepo：a11y / commit / dev / doc / pkg / rel / repo / type 等 18 轴零依赖单文件 CLI，统一入口 + CI 门禁 |
-| [tech-news-hub](https://github.com/huanweide/tech-news-hub) | 科技前瞻 TechPulse：每周科技资讯站，含新闻、可对话 BYOK 助手与真实优惠圈，纯静态 0 元 GitHub Pages |
+| [doctors](https://github.com/huanweide/doctors) / [enghealth](https://github.com/huanweide/enghealth) | 代码健康体检全家桶：a11y / commit / dev / doc / pkg / rel / repo / type 等 18 轴零依赖单文件 CLI，统一入口 + CI 门禁 |
 | [prompt-refiner](https://github.com/huanweide/prompt-refiner) | 把口语变提示词，本地跑、零依赖、零 API Key、不花一分钱 |
 | [pagext](https://github.com/huanweide/pagext) | 网页正文提取器：把任意网页 / 本地 HTML / stdin 变成干净 Markdown，自带 fetch，不靠黑盒 |
 | [jpath](https://github.com/huanweide/jpath) | JSON 路径查询 + 树打印 + 拍平过滤 CLI，jq 的轻量替代 |
 | [floatsnip](https://github.com/huanweide/floatsnip) | 悬浮球快贴：随时外显的悬浮球，点一下即复制常用文字，免费开源、单文件免安装 |
+| [self-discipline-forest](https://github.com/huanweide/self-discipline-forest) | 专注森林：基于 Flutter 的自律养成 App |
 | [awesome-selfhosted-cn](https://github.com/huanweide/awesome-selfhosted-cn) | 可以在本地搭建的网络服务和 Web 应用清单（中文版） |
 
 ---
@@ -77,12 +77,15 @@
 ## GitHub 数据
 
 <div align="center">
-  <img height="170em" src="https://github-readme-stats.vercel.app/api?username=huanweide&show_icons=true&theme=tokyonight&count_private=true&hide_border=true&bg_color=0D1117" alt="GitHub Stats" />
-  <img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=huanweide&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117" alt="Top Languages" />
+  <img src="https://streak-stats.demolab.com?user=huanweide&theme=tokyonight&hide_border=true&background=0D1117&locale=zh_Hans" alt="Streak Stats" />
 </div>
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=huanweide&theme=tokyonight&hide_border=true&bg_color=0D1117&area=true" alt="Contribution Graph" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=huanweide&theme=tokyonight" alt="Profile Summary" />
+</div>
+
+<div align="center">
+  <img src="https://ghchart.rshah.org/378ADD/huanweide" alt="Contribution Chart" />
 </div>
 
 ---
