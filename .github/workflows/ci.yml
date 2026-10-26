@@ -1,0 +1,69 @@
+name: profile-ci
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+
+jobs:
+  readme:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: 门面文件完整性
+        run: |
+          set -e
+          test -f README.md
+          size=$(wc -c < README.md)
+          echo "README.md = ${size} 字节"
+          if [ "$size" -lt 3000 ]; then
+            echo "FAIL: README 过短，不像账号门面"
+            exit 1
+          fi
+          for f in LICENSE SECURITY.md CODE_OF_CONDUCT.md; do
+            test -f "$f" || { echo "FAIL: 缺少 $f"; exit 1; }
+          done
+          echo "OK: 门面文件齐全"
+
+      - name: 不得写入密钥 / 凭据
+        run: |
+          set -e
+          if grep -nEi 'BEGIN (RSA |OPENSSH |PRIVATE )?(PRIVATE KEY)|ghp_[A-Za-z0-9]{20,}|github_pat_[A-Za-z0-9_]{20,}' README.md; then
+            echo "FAIL: README 检出疑似密钥"
+            exit 1
+          fi
+          echo "OK: 无密钥泄漏"
+
+      - name: 仓库名格式合法（防拼错 / 防截断）
+        run: |
+          set -e
+          node - <<'JS'
+          const fs = require('fs');
+          const md = fs.readFileSync('README.md', 'utf8');
+          const names = [...new Set([...md.matchAll(/github\.com\/huanweide\/([A-Za-z0-9._-]+)/g)].map(m => m[1]))];
+          const bad = names.filter(n => !/^[A-Za-z0-9][A-Za-z0-9._-]*$/.test(n) || n.endsWith('.git'));
+          if (bad.length) { console.error('FAIL: 非法仓库名 ->', bad); process.exit(1); }
+          console.log(`OK: ${names.length} 个仓库链接格式合法`);
+          fs.writeFileSync('.ci-repos.txt', names.join('\n'));
+          JS
+
+      - name: 精选项目链接必须真实存在（不接受死链）
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          n=0
+          while read -r repo || [ -n "$repo" ]; do
+            [ -z "$repo" ] && continue
+            if gh repo view "huanweide/$repo" --json name >/dev/null 2>&1; then
+              echo "  ok   huanweide/$repo"
+            else
+              echo "  FAIL huanweide/$repo 不存在（死链）"
+              exit 1
+            fi
+            n=$((n+1))
+          done < .ci-repos.txt
+          echo "OK: $n 个仓库链接全部真实存在"
