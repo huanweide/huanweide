@@ -70,7 +70,7 @@
 | [maxloop-overlord](https://github.com/huanweide/maxloop-overlord) | 范式本体：Agent Skill，产品深度迭代 / 方案升级双模式 |
 | [codehealth-loop](https://github.com/huanweide/codehealth-loop) | 范式在工程健康场景的具象化：12 轴 + 四道刹车 + 沙箱验证 |
 | [veriloop](https://github.com/huanweide/veriloop) | 范式在代码审计场景的具象化：12 分析轴 + 4 道验证刹车 |
-| [overlord-loop](https://github.com/huanweide/overlord-loop) | 魔王系统：让 AI 自我迭代、多层自检的代码进化引擎 |
+| [overlord-loop](https://github.com/huanweide/overlord-loop) | 自动化代码进化闭环引擎：让 AI 从空仓库干到上线并持续打磨，内置多层自检与外部判定刹车 |
 
 ### 代码健康体检家族（零依赖单文件 CLI）
 
